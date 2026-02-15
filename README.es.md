@@ -27,10 +27,9 @@ Cada directorio contiene dos archivos: `AGENTS.md` (guía para el agente) e `IND
 ## Principios
 
 1. **Persistencia activa** — Los agentes guardan hallazgos de inmediato, sin necesidad de instrucción.
-2. **KBase primero** — Buscar conocimiento interno antes que fuentes externas. Orden: rules, notes, refs, skills, luego externo.
-3. **Fuentes autoritativas** — Todo conocimiento se verifica contra fuentes primarias. El conocimiento no verificado no se almacena.
-4. **Documentación primero** — Actualizar la documentación antes de actuar. En caso de conflicto, actualizar la fuente de nivel inferior.
-5. **Despacho de habilidades** — Revisar habilidades existentes antes de trabajo ad-hoc.
+2. **Fuentes autoritativas** — Todo conocimiento se verifica contra fuentes primarias. El conocimiento no verificado no se almacena.
+3. **Documentación primero** — Actualizar la documentación antes de actuar. En caso de conflicto, actualizar la fuente de nivel inferior.
+4. **Despacho de habilidades** — Revisar habilidades existentes antes de trabajo ad-hoc.
 
 ## Protocolo de Comunicación
 

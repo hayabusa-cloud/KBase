@@ -27,10 +27,9 @@ Chaque répertoire contient deux fichiers : `AGENTS.md` (guide pour l'agent) et 
 ## Principes
 
 1. **Persistance active** — Les agents sauvegardent leurs découvertes immédiatement, sans instruction.
-2. **KBase d'abord** — Chercher dans les connaissances internes avant les sources externes. Ordre : rules, notes, refs, skills, puis externe.
-3. **Sources faisant autorité** — Toute connaissance est vérifiée contre des sources primaires. Les connaissances non vérifiées ne sont pas stockées.
-4. **Documentation d'abord** — Mettre à jour la documentation avant d'agir. En cas de conflit, mettre à jour la source de niveau inférieur.
-5. **Dispatch de compétences** — Vérifier les compétences existantes avant tout travail ad-hoc.
+2. **Sources faisant autorité** — Toute connaissance est vérifiée contre des sources primaires. Les connaissances non vérifiées ne sont pas stockées.
+3. **Documentation d'abord** — Mettre à jour la documentation avant d'agir. En cas de conflit, mettre à jour la source de niveau inférieur.
+4. **Dispatch de compétences** — Vérifier les compétences existantes avant tout travail ad-hoc.
 
 ## Protocole de Communication
 
