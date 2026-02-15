@@ -46,6 +46,8 @@ Deliverables (`[[...]]`, `[...]`) are the atomic units of value.
 | `@Q`         | Clarification | Question to resolve ambiguity.          |
 | `> ...`      | Quote | Reply to specific context.              |
 | `->`         | Control Flow | `?( Condition ) -> [ Action ]`.         |
+| `[ X ] : ( Y )` | Review-Fix (soft) | Review X against expectation Y; fix if unsatisfied. Best effort. |
+| `[[ X ]] : (( Y ))` | Review-Fix (hard) | Deep review X against Y; MUST satisfy. Violation = `blocked`. |
 
 ### 2.2 Response Schema (@A)
 The Agent MUST output strictly in this order:

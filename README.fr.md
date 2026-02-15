@@ -47,6 +47,8 @@ KBase définit une notation structurée pour l'interaction humain–agent. Spéc
 | `< ... >` | Contexte d'entrée |
 | `<< ... >>` | Pointeur de référence |
 | `->` | Flux de contrôle — `?( Condition ) -> [ Action ]` |
+| `[ X ] : ( Y )` | Revue-correction (souple) — examiner X selon Y ; corriger si non satisfait |
+| `[[ X ]] : (( Y ))` | Revue-correction (stricte) — revue approfondie de X ; Y doit être satisfait |
 
 États : `ready` → `done` (normal) ou `ready` → `blocked` (conflit/entrée manquante).
 

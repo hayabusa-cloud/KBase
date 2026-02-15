@@ -47,6 +47,8 @@ KBase defines a structured notation for human–agent interaction. Full spec: [`
 | `< ... >` | Input context |
 | `<< ... >>` | Reference pointer |
 | `->` | Control flow — `?( Condition ) -> [ Action ]` |
+| `[ X ] : ( Y )` | Review-fix (soft) — review X against Y; fix if unsatisfied |
+| `[[ X ]] : (( Y ))` | Review-fix (hard) — deep review X against Y; must satisfy |
 
 States: `ready` → `done` (normal) or `ready` → `blocked` (conflict/missing input).
 

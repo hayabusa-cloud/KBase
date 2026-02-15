@@ -47,6 +47,8 @@ KBase define una notación estructurada para la interacción humano–agente. Es
 | `< ... >` | Contexto de entrada |
 | `<< ... >>` | Puntero de referencia |
 | `->` | Flujo de control — `?( Condición ) -> [ Acción ]` |
+| `[ X ] : ( Y )` | Revisión-corrección (suave) — revisar X contra Y; corregir si no se cumple |
+| `[[ X ]] : (( Y ))` | Revisión-corrección (estricta) — revisión profunda de X; Y debe cumplirse |
 
 Estados: `ready` → `done` (normal) o `ready` → `blocked` (conflicto/entrada faltante).
 
