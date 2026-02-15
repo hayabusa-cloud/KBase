@@ -27,10 +27,9 @@ Every directory contains two files: `AGENTS.md` (guide for the agent) and `INDEX
 ## Principles
 
 1. **Active persistence** — Agents save findings immediately, without being asked.
-2. **KBase-first** — Search internal knowledge before external sources. Order: rules, notes, refs, skills, then external.
-3. **Authoritative sources** — All knowledge verified against primary sources. Unverified knowledge is not stored.
-4. **Doc-first** — Update documentation before acting on it. On conflict, update the lower-tier source.
-5. **Skill dispatch** — Check existing skills before doing ad-hoc work.
+2. **Authoritative sources** — All knowledge verified against primary sources. Unverified knowledge is not stored.
+3. **Doc-first** — Update documentation before acting on it. On conflict, update the lower-tier source.
+4. **Skill dispatch** — Check existing skills before doing ad-hoc work.
 
 ## Communication Protocol
 
@@ -47,6 +46,8 @@ KBase defines a structured notation for human–agent interaction. Full spec: [`
 | `< ... >` | Input context |
 | `<< ... >>` | Reference pointer |
 | `->` | Control flow — `?( Condition ) -> [ Action ]` |
+| `[ X ] : ( Y )` | Review-fix (soft) — review X against Y; fix if unsatisfied |
+| `[[ X ]] : (( Y ))` | Review-fix (hard) — deep review X against Y; must satisfy |
 
 States: `ready` → `done` (normal) or `ready` → `blocked` (conflict/missing input).
 
