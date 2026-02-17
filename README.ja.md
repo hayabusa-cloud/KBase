@@ -95,9 +95,9 @@ KBaseはヒューマン・エージェント間の構造化された記法を定
 
 セッション開始時、エージェントは以下の順序で読み込む：
 
-`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
+`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/communication.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
 
-コンテキスト圧縮後、エージェントは最低でも最初の3ファイルを再読み込みする。
+コンテキスト圧縮後、エージェントは最低でも最初の4ファイルを再読み込みする。
 
 ## コマンド
 

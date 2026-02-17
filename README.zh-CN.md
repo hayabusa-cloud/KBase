@@ -95,9 +95,9 @@ KBase定义了人机交互的结构化记法。完整规范：[`ROOT/communicati
 
 会话启动时，代理按以下顺序读取：
 
-`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
+`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/communication.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
 
-上下文压缩后，代理至少重新读取前三个文件。
+上下文压缩后，代理至少重新读取前四个文件。
 
 ## 命令
 

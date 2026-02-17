@@ -95,9 +95,9 @@ To add content manually, create a markdown file in the target directory and add 
 
 On session start, the agent reads in this order:
 
-`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
+`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/communication.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
 
-After context compaction, the agent re-reads the first three files minimum.
+After context compaction, the agent re-reads the first four files minimum.
 
 ## Commands
 
