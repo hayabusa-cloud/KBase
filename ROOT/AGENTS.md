@@ -6,7 +6,7 @@ Highest authority. Read first.
 
 `AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/communication.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
 
-After compaction: re-read first three minimum. See `compaction.md`.
+After compaction: re-read first four minimum. See `compaction.md`.
 
 ### Reference
 

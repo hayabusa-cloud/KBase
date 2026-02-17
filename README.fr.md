@@ -95,9 +95,9 @@ Pour ajouter du contenu manuellement, créer un fichier Markdown dans le répert
 
 Au démarrage de session, l'agent lit dans cet ordre :
 
-`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
+`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/communication.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
 
-Après compaction du contexte, l'agent relit au minimum les trois premiers fichiers.
+Après compaction du contexte, l'agent relit au minimum les quatre premiers fichiers.
 
 ## Commandes
 

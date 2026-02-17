@@ -95,9 +95,9 @@ Para agregar contenido manualmente, crear un archivo Markdown en el directorio d
 
 Al iniciar la sesión, el agente lee en este orden:
 
-`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
+`AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/communication.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md` → `notes/INDEX.md`
 
-Tras la compactación de contexto, el agente relee al menos los tres primeros archivos.
+Tras la compactación de contexto, el agente relee al menos los cuatro primeros archivos.
 
 ## Comandos
 
