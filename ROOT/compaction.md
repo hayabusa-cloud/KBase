@@ -15,5 +15,5 @@ Act at ~80% context consumed or before a large operation.
 
 ## Recovery
 
-Re-read: `AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/communication.md` → `ROOT/instructions.md`.
+Re-read: `AGENTS.md` → `ROOT/AGENTS.md` → `ROOT/communication.md` → `ROOT/instructions.md` → `rules/INDEX.md` → `skills/INDEX.md`.
 Resume from `plans/` if task was in progress.
