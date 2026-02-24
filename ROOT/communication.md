@@ -48,6 +48,17 @@ Deliverables (`[[...]]`, `[...]`) are the atomic units of value.
 | `->`         | Control Flow | `?( Condition ) -> [ Action ]`.         |
 | `[ X ] : ( Y )` | Review-Fix (soft) | Review X against expectation Y; fix if unsatisfied. Best effort. |
 | `[[ X ]] : (( Y ))` | Review-Fix (hard) | Deep review X against Y; MUST satisfy. Violation = `blocked`. |
+| `[ ... ](RO)` | Read-Only Optional | Like `[ ... ]` but DO NOT change product code. Analysis/review only. |
+| `[[ ... ]](RO)` | Read-Only Must | Like `[[ ... ]]` but DO NOT change product code. Must deliver artifact read-only. |
+| `[ ... ](+W)` | Write-Allow Optional | Like `[ ... ]` with explicit permission to edit product code. |
+| `[[ ... ]](+W)` | Write-Allow Must | Like `[[ ... ]]` with explicit permission to edit product code. |
+| `[ ... ](SK)` | Skill-First Optional | Like `[ ... ]` but explicitly search skills and rules, and use existing skills. |
+| `[[ ... ]](SK)` | Skill-First Must | Like `[[ ... ]]` but explicitly search skills and rules, and use existing skills. |
+
+### 2.1.1 Plan Mode for Major Edits
+
+When making a very **major, large, or core** edit — regardless of `(+W)` — `@A` may ask `@U` whether to enter plan mode before proceeding.
+If no explicit `(+W)` is present, `@A` SHOULD prefer entering plan mode for edits.
 
 ### 2.2 Response Schema (@A)
 The Agent MUST output strictly in this order:
