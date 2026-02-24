@@ -48,6 +48,12 @@ KBase définit une notation structurée pour l'interaction humain–agent. Spéc
 | `->` | Flux de contrôle — `?( Condition ) -> [ Action ]` |
 | `[ X ] : ( Y )` | Revue-correction (souple) — examiner X selon Y ; corriger si non satisfait |
 | `[[ X ]] : (( Y ))` | Revue-correction (stricte) — revue approfondie de X ; Y doit être satisfait |
+| `[ ... ](RO)` | Lecture seule optionnel — comme `[ ... ]` mais sans modifier le code du produit |
+| `[[ ... ]](RO)` | Lecture seule obligatoire — comme `[[ ... ]]` mais sans modifier le code du produit |
+| `[ ... ](+W)` | Écriture autorisée optionnel — comme `[ ... ]` avec permission de modifier le code du produit |
+| `[[ ... ]](+W)` | Écriture autorisée obligatoire — comme `[[ ... ]]` avec permission de modifier le code du produit |
+| `[ ... ](SK)` | Compétence d'abord optionnel — comme `[ ... ]` mais rechercher explicitement compétences et règles, et utiliser les compétences existantes |
+| `[[ ... ]](SK)` | Compétence d'abord obligatoire — comme `[[ ... ]]` mais rechercher explicitement compétences et règles, et utiliser les compétences existantes |
 
 États : `ready` → `done` (normal) ou `ready` → `blocked` (conflit/entrée manquante).
 

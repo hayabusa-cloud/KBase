@@ -48,6 +48,12 @@ KBase defines a structured notation for human–agent interaction. Full spec: [`
 | `->` | Control flow — `?( Condition ) -> [ Action ]` |
 | `[ X ] : ( Y )` | Review-fix (soft) — review X against Y; fix if unsatisfied |
 | `[[ X ]] : (( Y ))` | Review-fix (hard) — deep review X against Y; must satisfy |
+| `[ ... ](RO)` | Read-only optional — like `[ ... ]` but do not change product code |
+| `[[ ... ]](RO)` | Read-only must — like `[[ ... ]]` but do not change product code |
+| `[ ... ](+W)` | Write-allow optional — like `[ ... ]` with permission to edit product code |
+| `[[ ... ]](+W)` | Write-allow must — like `[[ ... ]]` with permission to edit product code |
+| `[ ... ](SK)` | Skill-first optional — like `[ ... ]` but explicitly search skills and rules, and use existing skills |
+| `[[ ... ]](SK)` | Skill-first must — like `[[ ... ]]` but explicitly search skills and rules, and use existing skills |
 
 States: `ready` → `done` (normal) or `ready` → `blocked` (conflict/missing input).
 

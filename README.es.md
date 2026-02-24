@@ -48,6 +48,12 @@ KBase define una notación estructurada para la interacción humano–agente. Es
 | `->` | Flujo de control — `?( Condición ) -> [ Acción ]` |
 | `[ X ] : ( Y )` | Revisión-corrección (suave) — revisar X contra Y; corregir si no se cumple |
 | `[[ X ]] : (( Y ))` | Revisión-corrección (estricta) — revisión profunda de X; Y debe cumplirse |
+| `[ ... ](RO)` | Solo lectura opcional — como `[ ... ]` pero sin modificar código del producto |
+| `[[ ... ]](RO)` | Solo lectura obligatorio — como `[[ ... ]]` pero sin modificar código del producto |
+| `[ ... ](+W)` | Escritura permitida opcional — como `[ ... ]` con permiso para editar código del producto |
+| `[[ ... ]](+W)` | Escritura permitida obligatorio — como `[[ ... ]]` con permiso para editar código del producto |
+| `[ ... ](SK)` | Habilidad primero opcional — como `[ ... ]` pero buscar explícitamente habilidades y reglas, y usar habilidades existentes |
+| `[[ ... ]](SK)` | Habilidad primero obligatorio — como `[[ ... ]]` pero buscar explícitamente habilidades y reglas, y usar habilidades existentes |
 
 Estados: `ready` → `done` (normal) o `ready` → `blocked` (conflicto/entrada faltante).
 

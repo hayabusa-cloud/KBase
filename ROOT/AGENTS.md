@@ -15,7 +15,7 @@ After compaction: re-read first four minimum. See `compaction.md`.
 | `style.md` | Writing KBase content |
 | `template.md` | Creating new directories |
 | `compaction.md` | Context approaching limits |
-| `communication.md` | **Protocol** interaction standard |
+| `communication.md` | Structured interaction with user |
 
 ### Principles
 
@@ -24,6 +24,7 @@ After compaction: re-read first four minimum. See `compaction.md`.
 3. **Authoritative sources** — Verify against primary sources; unverified knowledge is dangerous
 4. **Doc-first** — Update KBase before acting; conflict → update lower-tier source
 5. **Skill dispatch** — Check `skills/INDEX.md` before ad-hoc work
+6. **Plan-mode bias** — Prefer entering plan mode before major edits
 
 ### Source of Truth
 
